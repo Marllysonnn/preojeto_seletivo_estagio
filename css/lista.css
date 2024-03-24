@@ -1,0 +1,32 @@
+#listaProdutos{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#listaProdutos button{
+    width: fit-content;
+    border: none;
+    color: #fff;
+    font-size: smaller;   
+    padding: 0.4em 0.4em;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    background-color: #ab34fa;
+}
+#listaProdutos button:hover{
+    background-color: #b957fa;
+}
+table{
+    width: 20rem;
+}
+tr{
+    text-align: center;
+    background-color: #b186f1;
+}
+.sla{
+    background-color: #9a64ec;
+}
+tr:hover{
+    background-color: #a775f1;
+    cursor: pointer;
+}

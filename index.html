@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="opacy" style="display: none;"></div>
+    <div id="formulario">
+        <form id="formRegistro" onsubmit="registrarProduto(event)">
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" name="nomeProduto" required>
+        
+            <label for="descricaoProduto">Descrição do Produto:</label>
+            <input type="text" id="descricaoProduto" name="descricaoProduto" required>
+        
+            <label for="valorProduto">Valor do Produto:</label>
+            <input type="number" id="valorProduto" name="valorProduto" step="0.01" required>
+        
+            <label for="disponivelVenda">Disponível para venda:</label>
+            <select id="disponivelVenda" name="disponivelVenda">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+        
+            <button type="submit">Registrar Produto</button>
+            <button onclick="fecharFormulario()">Cancelar</button>
+        </form>
+    </div>
+    <div id="listaProdutos">
+        <h2>PRODUTOS</h2>
+        <table>
+            <thead>
+                <tr class="sla">
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Disponível para Venda</th>
+                    <th style="display: none;"></th>
+                </tr>
+            </thead>
+            <tbody id="tabelaProdutos"></tbody>
+        </table>
+        <button onclick="mostrarFormulario()">Cadastrar Novo Produto</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

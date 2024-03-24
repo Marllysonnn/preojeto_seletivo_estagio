@@ -1,0 +1,5 @@
+Fiz algumas melhorias para o funcionamento do sistema e desgin UI/UX:
+
+- Excluir produto caso tenha sido cadastrado incorretamente;
+- uma nova lista para visualizacao se o produto estiver em venda ou nao;
+- um botão de cancelar o layout de cadastro caso o cadastramento tenha que ser fechado (algo previsto como erro meu talvez por criar um overlay do cadastramento);
